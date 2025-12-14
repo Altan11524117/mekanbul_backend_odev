@@ -1,15 +1,19 @@
-[Vercel bağlantısı](https://mekanbul-backend-odev.vercel.app/)
+**Canlı URL:** [https://mekanbul-backend-odev.vercel.app/](https://mekanbul-backend-odev.vercel.app/)
 
-**API Endpoints**
-- Tüm Mekanları listele: `GET /api/venues`
-- Yeni Mekan Ekle: `POST /api/venues`
-- Mekan Detayını Getir: `GET /api/venues/:venueid`
-- Mekanı Güncelle: `PUT /api/venues/:venueid`
-- Mekanı Sil: `DELETE /api/venues/:venueid`
-- Yorum Ekle(Mekana): `POST /api/venues/:venueid/comments`
-- Yorum Getir: `GET /api/venues/:venueid/comments/:commentid`
-- Yorum Güncelle: `PUT /api/venues/:venueid/comments/:commentid`
-- Yorum Sil: `DELETE /api/venues/:venueid/comments/:commentid`
+## API Endpoints
+
+| Metot | Endpoint | Açıklama |
+|-------|----------|----------|
+| `GET` | `/api/venues` | Tüm mekanları listeler (veya koordinata göre yakın mekanları getirir) |
+| `POST` | `/api/venues` | Yeni bir mekan ekler |
+| `GET` | `/api/venues/:venueid` | Belirtilen ID'ye sahip mekanın detaylarını getirir |
+| `PUT` | `/api/venues/:venueid` | Mekan bilgilerini günceller |
+| `DELETE` | `/api/venues/:venueid` | Mekanı siler |
+| `POST` | `/api/venues/:venueid/comments` | Mekana yeni bir yorum ekler |
+| `GET` | `/api/venues/:venueid/comments/:commentid` | Belirli bir yorumu getirir |
+| `PUT` | `/api/venues/:venueid/comments/:commentid` | Yorumu günceller |
+| `DELETE` | `/api/venues/:venueid/comments/:commentid` | Yorumu siler |
+
 
 **Postman ekran görüntüleri**
 ### Mekan İşlemleri
